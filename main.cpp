@@ -8,6 +8,10 @@
 #include <execution>
 #include <iomanip>
 
+//Berezhna Olga
+//Group: K-27
+//Variant 15
+
 using namespace std;
 
 double fast_operation(double x)
@@ -156,4 +160,5 @@ int main()
 	}	
 	return 0;
 }
+
 
