@@ -1,0 +1,89 @@
+Number of available hardware threads: 8
+
+=== Data size === 100000===
+
+***FAST OPERATION***
+No policy: 0.4409 ms
+Policy SEQ: 0.4011 ms
+Policy PAR: 0.5559 ms
+Policy PAR_UNSEQ: : 0.4009 ms
+
+--- Custom parallel ---
+
+--- Results table ---
+| K (threads)| time (ms)|
+|------------|----------|
+|          2 |    1.182 |
+|          4 |   0.5618 |
+|          8 |   0.7575 |
+-----------------------------------------------------------------
+The best speed is achieved at K = 4 (0.5618 ms)
+K/hardware_threads ratio: 4 / 8 = 0.5
+ Analysis of the dependence of time on K:
+* For most tasks, the best speed is achieved when K is approximately equal to the hardware number of threads (8) or a little more.
+* At K  > 8: time usually increases (or acceleration stops) due to high overhead of context switching and managing a large number of threads.
+
+***SLOW OPERATION***
+ No policy: 372.955 ms
+Policy SEQ: 292.724 ms
+Policy PAR: 63.2997 ms
+Policy PAR_UNSEQ: : 69.7674 ms
+
+--- Custom parallel ---
+
+--- Results table ---
+| K (threads)| time (ms)|
+|------------|----------|
+|          2 |  178.838 |
+|          4 |  101.495 |
+|          8 |  65.9067 |
+-----------------------------------------------------------------
+The best speed is achieved at K = 8 (65.9067 ms)
+K/hardware_threads ratio: 8 / 8 = 1
+ Analysis of the dependence of time on K:
+* For most tasks, the best speed is achieved when K is approximately equal to the hardware number of threads (8) or a little more.
+* At K  > 8: time usually increases (or acceleration stops) due to high overhead of context switching and managing a large number of threads.
+
+=== Data size === 1000000===
+
+***FAST OPERATION***
+No policy: 2.5497 ms
+Policy SEQ: 2.4689 ms
+Policy PAR: 1.2441 ms
+Policy PAR_UNSEQ: : 1.0731 ms
+
+--- Custom parallel ---
+
+--- Results table ---
+| K (threads)| time (ms)|
+|------------|----------|
+|          2 |   2.5227 |
+|          4 |   1.7709 |
+|          8 |   1.8591 |
+-----------------------------------------------------------------
+The best speed is achieved at K = 4 (1.7709 ms)
+K/hardware_threads ratio: 4 / 8 = 0.5
+ Analysis of the dependence of time on K:
+* For most tasks, the best speed is achieved when K is approximately equal to the hardware number of threads (8) or a little more.
+* At K  > 8: time usually increases (or acceleration stops) due to high overhead of context switching and managing a large number of threads.
+
+***SLOW OPERATION***
+ No policy: 3164.9 ms
+Policy SEQ: 2933.97 ms
+Policy PAR: 604.077 ms
+Policy PAR_UNSEQ: : 1979.54 ms
+
+--- Custom parallel ---
+
+--- Results table ---
+| K (threads)| time (ms)|
+|------------|----------|
+|          2 |  1580.63 |
+|          4 |  1031.82 |
+|          8 |  659.838 |
+-----------------------------------------------------------------
+The best speed is achieved at K = 8 (659.838 ms)
+K/hardware_threads ratio: 8 / 8 = 1
+ Analysis of the dependence of time on K:
+* For most tasks, the best speed is achieved when K is approximately equal to the hardware number of threads (8) or a little more.
+* At K  > 8: time usually increases (or acceleration stops) due to high overhead of context switching and managing a large number of threads.
